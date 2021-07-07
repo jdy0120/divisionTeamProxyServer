@@ -3,7 +3,6 @@ import fetch from 'node-fetch'
 
 export const getUserAccountId = async(userId:any) => {
     const response = await(await fetch(`${API_URL}/lol/summoner/v4/summoners/by-name/${encodeURI(userId)}?api_key=${API_KEY}`)).json()
-    console.log(`response`,response)
     return response
 }
 
