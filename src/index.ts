@@ -10,8 +10,8 @@ import { fetchUserAccountId,fetchUserInfo } from './UserInfo/userinfo';
 const app = express();
 
 app.use(cors({
-  origin: "https://jdy0120.github.io",
-  // origin: 'http://localhost:3000'
+  // origin: "https://jdy0120.github.io",
+  origin: 'http://localhost:3000',
   credentials: true,
 }));
 
